@@ -140,17 +140,17 @@ ul {
     width: 16px;
 }
 
-.line:first-child {
+/* .line:first-child {
     transform-origin: left top;
-}
+} */
 
 .line:nth-child(2) {
     width: 18px;
 }
 
-.line:last-child {
+/* .line:last-child {
     transform-origin: left top;
-}
+} */
 
 .medium-button {
     border-radius: 8px;
@@ -189,9 +189,7 @@ ul {
 }
 
 .burger-checkbox:checked + .menu-button .line:first-child {
-    transform: translate(3px, -1px) rotate(45deg);
-    width: 19px;
-    transform-origin: left top;
+    transform: translateY(6px) rotate(45deg) scaleX(1.2)
 }
 
 .burger-checkbox:checked + .menu-button .line:nth-child(2) {
@@ -199,9 +197,7 @@ ul {
 }
 
 .burger-checkbox:checked + .menu-button .line:last-child {
-    transform: translate(2px, 1px) rotate(-45deg);
-    width: 19px;
-    transform-origin: left top;
+    transform: translateY(-6px) rotate(-45deg) scaleX(1.2);
 }
 
 .app-header:has(.burger-checkbox:checked) {
