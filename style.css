@@ -19,6 +19,7 @@ body {
     margin: 0;
     background: var(--color-background-secondary);
     min-width: 320px;
+    height: 3000px;
 }
 
 * {
@@ -460,20 +461,20 @@ ul {
     }
 
     .aside-list-item {
-        border-radius: 8px;
         font: 500 .875rem / 1.25rem MTSCompactMedium, sans-serif;
-        transition: color .3s ease, background-color .3s ease;
     }
 
     .big-menu-label {
+        border-radius: 8px;
         display: flex;
         cursor: pointer;
         width: 100%;
         height: 100%;
         padding: .5rem .75rem;
+        transition: color .3s ease, background-color .3s ease;
     }
 
-    .aside-list-item:hover {
+    .big-menu-label:hover {
         background-color: var(--color-background-secondary);
     }
 
@@ -481,7 +482,7 @@ ul {
         display: none;
     }
 
-    .aside-list-item:has(.big-menu-radio:checked) {
+    .big-menu-radio:checked + .big-menu-label {
         background-color: var(--color-background-inverted);
         color: var(--color-text-inverted);
     }
