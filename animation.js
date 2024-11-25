@@ -93,70 +93,90 @@ nestedAccordionHeaders.forEach(nestedHeader => {
     });
 });
 
+function showBigMenu(event) {
+    const accordion = event.target;
+    const bigMenu = document.querySelector(`.${accordion.dataset.name}-big-menu`);
+
+    if (accordion.checked) {
+        bigMenu.style.transform = 'translateY(128px)';
+        bigMenu.style.boxShadow = '0 0 6px rgba(0,0,0,.08),0 4px 16px rgba(0,0,0,.08)';
+    } else {
+        bigMenu.style.transform = '';
+        bigMenu.style.boxShadow = '';
+    }
+}
+
+function handleCheckboxChange(event) {
+    const checkbox = event.target;
+    const header = checkbox.closest('.accordion-header');
+    const accordionAction = header.querySelector('.accordion-action');
+    const isChecked = checkbox.checked;
+
+    if (isChecked) {
+        accordionAction.style.transform = 'rotate(-180deg)';
+        accordionAction.style.color = 'red';
+        appHeader.style.backgroundColor = '#fff';
+        menuOptions.style.backgroundColor = '#fff';
+        menuOptions.style.boxShadow = '0 0 6px rgba(0,0,0,.08),0 4px 16px rgba(0,0,0,.08)';
+    } else {
+        accordionAction.style.transform = '';
+        accordionAction.style.color = '';
+        appHeader.style.backgroundColor = '';
+        menuOptions.style.backgroundColor = '';
+        menuOptions.style.boxShadow = '';
+    }
+}
+
+function handleHeaderMouseOver(event) {
+    const header = event.currentTarget;
+    header.style.color = '#ff0032';
+}
+
+function handleHeaderMouseOut(event) {
+    const header = event.currentTarget;
+    header.style.color = '#1d2023';
+}
+
+function handleLinkMouseOver(event) {
+    const link = event.currentTarget;
+    link.style.color = '#ff0032';
+}
+
+function handleLinkMouseOut(event) {
+    const link = event.currentTarget;
+    link.style.color = '#1d2023';
+}
+
 function isBigScreen() {
     const screenWidth = window.innerWidth;
+    const accordionNames = ['products', 'services', 'events', 'support'];
+    const radioNames = ['iaas', 'saas', 'dbaas', 'secaas', 'naas', 'ai', 'consulting', 'outsourcing', 'custom'];
 
     if (screenWidth > 1280) {
-        appHeader.style.boxShadow = 'none';
         appHeader.style.backgroundColor = '#f2f3f7';
+        appHeader.style.boxShadow = 'none';
         
-        const accordionNames = ['products', 'services', 'events', 'support'];
         accordionNames.forEach(name => {
             const accordion = document.querySelector(`.${name}-accordion`);
-            const bigMenu = document.querySelector(`.${name}-big-menu`);
+            accordion.dataset.name = name;
 
-            accordion.addEventListener('change', () => {
-                if (accordion.checked) {
-                    bigMenu.style.transform = 'translateY(128px)';
-                    bigMenu.style.boxShadow = '0 0 6px rgba(0,0,0,.08),0 4px 16px rgba(0,0,0,.08)';
-                } else {
-                    bigMenu.style.transform = '';
-                    bigMenu.style.boxShadow = '';
-                }
-            });
+            accordion.addEventListener('change', showBigMenu);
             
             accordionHeaders.forEach(header => {
                 const checkbox = header.querySelector('.checkbox-accordion');
-                const accordionAction = header.querySelector('.accordion-action');
 
-                checkbox.addEventListener('change', () => {
-                    if (checkbox.checked) {
-                        accordionAction.style.transform = 'rotate(-180deg)';
-                        accordionAction.style.color = 'red';
-                        appHeader.style.backgroundColor = '#fff';
-                        menuOptions.style.backgroundColor = '#fff';
-                        menuOptions.style.boxShadow = '0 0 6px rgba(0,0,0,.08),0 4px 16px rgba(0,0,0,.08)';
-                    } else {
-                        accordionAction.style.transform = '';
-                        accordionAction.style.color = '';
-                        appHeader.style.backgroundColor = '';
-                        menuOptions.style.backgroundColor = '';
-                        menuOptions.style.boxShadow = '';
-                    }
-                });
-
-                header.addEventListener('mouseover', () => {
-                    header.style.color = '#ff0032';
-                });
-
-                header.addEventListener('mouseout', () => {
-                    header.style.color = '#1d2023';
-                });
+                checkbox.addEventListener('change', handleCheckboxChange);
+                header.addEventListener('mouseover', handleHeaderMouseOver);
+                header.addEventListener('mouseout', handleHeaderMouseOut);            
             })
         });
 
         const accordionLinks = document.querySelectorAll('.accordion-link');
         accordionLinks.forEach(link => {
-            link.addEventListener('mouseover', () => {
-                link.style.color = '#ff0032';
-            });
-
-            link.addEventListener('mouseout', () => {
-                link.style.color = '#1d2023';
-            });
+            link.addEventListener('mouseover', handleLinkMouseOver);
+            link.addEventListener('mouseout', handleLinkMouseOut);        
         });
 
-        const radioNames = ['iaas', 'saas', 'dbaas', 'secaas', 'naas', 'ai', 'consulting', 'outsourcing', 'custom'];
         function updateMenuContent() {
             radioNames.forEach(radioName => {
                 const content = document.querySelector(`.base-menu-content-${radioName}`);
@@ -220,9 +240,37 @@ function isBigScreen() {
                 }
             });
         });
+
+        const contentListItems = document.querySelectorAll('.content-list-item');
+        contentListItems.forEach(contentItem => {
+            contentItem.addEventListener('mouseover', () => {
+                contentItem.style.backgroundColor = '#f2f3f7';
+            });
+            contentItem.addEventListener('mouseout', () => {
+                contentItem.style.backgroundColor = '#fff';
+            });
+        });
     } else if (burgerCheckbox.checked) {
         appHeader.style.backgroundColor = '#fff';
         appHeader.style.boxShadow = '0 0 6px rgba(0,0,0,.08),0 4px 16px rgba(0,0,0,.08)';
+
+        accordionNames.forEach(name => {
+            document.querySelector(`.${name}-accordion`).removeEventListener('change', showBigMenu);
+        });
+
+        accordionHeaders.forEach(header => {
+            const checkbox = header.querySelector('.checkbox-accordion');
+
+            checkbox.removeEventListener('change', handleCheckboxChange);
+            header.removeEventListener('mouseover', handleHeaderMouseOver);
+            header.removeEventListener('mouseout', handleHeaderMouseOut);            
+        })
+
+        const accordionLinks = document.querySelectorAll('.accordion-link');
+        accordionLinks.forEach(link => {
+            link.removeEventListener('mouseover', handleLinkMouseOver);
+            link.removeEventListener('mouseout', handleLinkMouseOut);        
+        });
     }
 }
 
