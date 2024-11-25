@@ -123,14 +123,6 @@ ul {
     display: none;
 }
 
-.menu-button:hover {
-    transform: scale(102%);
-}
-
-.menu-button:active {
-    transform: scale(98%);
-}
-
 .line {
     background: currentColor;
     border-radius: 2px;
@@ -140,17 +132,9 @@ ul {
     width: 16px;
 }
 
-/* .line:first-child {
-    transform-origin: left top;
-} */
-
 .line:nth-child(2) {
     width: 18px;
 }
-
-/* .line:last-child {
-    transform-origin: left top;
-} */
 
 .medium-button {
     border-radius: 8px;
@@ -186,28 +170,6 @@ ul {
 
 .burger-checkbox {
     display: none;
-}
-
-.burger-checkbox:checked + .menu-button .line:first-child {
-    transform: translateY(6px) rotate(45deg) scaleX(1.2)
-}
-
-.burger-checkbox:checked + .menu-button .line:nth-child(2) {
-    transform: scale(0);
-}
-
-.burger-checkbox:checked + .menu-button .line:last-child {
-    transform: translateY(-6px) rotate(-45deg) scaleX(1.2);
-}
-
-.app-header:has(.burger-checkbox:checked) {
-    background-color: #fff;
-    box-shadow: var(--color-background-secondary-elevated);
-}
-
-.app-header:has(.burger-checkbox:checked) ~ .menu-wrapper > .menu-options {
-    opacity: 1;
-    transform: translateX(0);
 }
 
 .accordion-item {
@@ -246,20 +208,6 @@ ul {
     overflow: hidden;
     transition: max-height 0.4s ease, padding-bottom 0.3s ease;
     padding-bottom: 0px;
-}
-
-.accordion-header:has(.checkbox-accordion:checked) + .accordion-content,
-.accordion-header:has(.checkbox-accordion:checked) + .unnested-accordion-content {
-    max-height: 3000px;
-    padding-bottom: 23px;
-}
-
-.accordion-header:has(.checkbox-accordion:checked) .accordion-name {
-    color: var(--button-primary-bg);
-}
-
-.accordion-header:has(.checkbox-accordion:checked) .accordion-action {
-    transform: rotate(-180deg);
 }
 
 .checkbox-nested-accordion {
@@ -330,14 +278,6 @@ ul {
     font: 400 .875rem / 1.25rem MTSCompactRegular, MTS Sans;
 }
 
-.nested-accordion-header:has(.checkbox-nested-accordion:checked) + .nested-accordion-content {
-    max-height: 3000px;
-}
-
-.nested-accordion-header:has(.checkbox-nested-accordion:checked) .vertical-line {
-    transform: rotate(0);
-}
-
 @media (max-width: 768px) {
     .email-button {
         display: none;
@@ -363,11 +303,6 @@ ul {
         height: 100vh;
     }
 
-    .app-header:has(.burger-checkbox:checked) ~ .menu-wrapper > .menu-options {
-        opacity: 1;
-        transform: translateY(0);
-    }
-
     .menu-options > .appointment-button {
         display: block;
         margin-top: 1rem;
@@ -376,11 +311,6 @@ ul {
 }
 
 @media (min-width: 1281px) {
-    .app-header:has(:not(.burger-checkbox:checked)) {
-        box-shadow: none;
-        background: var(--color-background-secondary-elevated);
-    }
-
     .burger {
         display: none;
     }
@@ -409,26 +339,6 @@ ul {
         column-gap: 3rem;
         overflow: hidden;
         box-shadow: none;
-    }
-
-    .menu-wrapper:has(.products-accordion:checked) .products-big-menu {
-        transform: translateY(128px);
-        box-shadow: var(--color-background-secondary-elevated);
-    }
-
-    .menu-wrapper:has(.services-accordion:checked) .services-big-menu {
-        transform: translateY(128px);
-        box-shadow: var(--color-background-secondary-elevated);
-    }
-
-    .menu-wrapper:has(.events-accordion:checked) .events-big-menu {
-        transform: translateY(128px);
-        box-shadow: var(--color-background-secondary-elevated);
-    }
-
-    .menu-wrapper:has(.support-accordion:checked) .support-big-menu {
-        transform: translateY(128px);
-        box-shadow: var(--color-background-secondary-elevated);
     }
 
     .base-menu-aside {
@@ -470,17 +380,8 @@ ul {
         transition: color .3s ease, background-color .3s ease;
     }
 
-    .big-menu-label:hover {
-        background-color: var(--color-background-secondary);
-    }
-
     .big-menu-radio {
         display: none;
-    }
-
-    .big-menu-radio:checked + .big-menu-label {
-        background-color: var(--color-background-inverted);
-        color: var(--color-text-inverted);
     }
 
     .aside-list-item:has(.big-menu-radio:not(:checked)) {
@@ -489,78 +390,6 @@ ul {
     }
 
     .base-menu-content-item {
-        display: none;
-    }
-
-    .products-big-menu:has(.big-menu-iaas-radio:checked) > .base-menu-content > .base-menu-content-iaas {
-        display: block;
-    }
-
-    .products-big-menu:has(.big-menu-iaas-radio:checked) .base-menu-content-item:not(.base-menu-content-iaas) {
-        display: none;
-    }
-
-    .products-big-menu:has(.big-menu-saas-radio:checked) > .base-menu-content .base-menu-content-saas {
-        display: block;
-    }
-
-    .products-big-menu:has(.big-menu-saas-radio:checked) .base-menu-content-item:not(.base-menu-content-saas) {
-        display: none;
-    }
-
-    .products-big-menu:has(.big-menu-dbaas-radio:checked) > .base-menu-content .base-menu-content-dbaas {
-        display: block;
-    }
-
-    .products-big-menu:has(.big-menu-dbaas-radio:checked) .base-menu-content-item:not(.base-menu-content-dbaas) {
-        display: none;
-    }
-
-    .products-big-menu:has(.big-menu-secaas-radio:checked) > .base-menu-content .base-menu-content-secaas {
-        display: block;
-    }
-
-    .products-big-menu:has(.big-menu-secaas-radio:checked) .base-menu-content-item:not(.base-menu-content-secaas) {
-        display: none;
-    }
-
-    .products-big-menu:has(.big-menu-naas-radio:checked) > .base-menu-content .base-menu-content-naas {
-        display: block;
-    }
-
-    .products-big-menu:has(.big-menu-naas-radio:checked) .base-menu-content-item:not(.base-menu-content-naas) {
-        display: none;
-    }
-
-    .products-big-menu:has(.big-menu-ai-radio:checked) > .base-menu-content .base-menu-content-ai {
-        display: block;
-    }
-
-    .products-big-menu:has(.big-menu-ai-radio:checked) .base-menu-content-item:not(.base-menu-content-ai) {
-        display: none;
-    }
-
-    .services-big-menu:has(.big-menu-consulting-radio:checked) .base-menu-content .base-menu-content-consulting {
-        display: block;
-    }
-
-    .services-big-menu:has(.big-menu-consulting-radio:checked) .base-menu-content-item:not(.base-menu-content-consulting) {
-        display: none;
-    }
-
-    .services-big-menu:has(.big-menu-outsourcing-radio:checked) .base-menu-content .base-menu-content-outsourcing {
-        display: block;
-    }
-
-    .services-big-menu:has(.big-menu-outsourcing-radio:checked) .base-menu-content-item:not(.base-menu-content-outsourcing) {
-        display: none;
-    }
-
-    .services-big-menu:has(.big-menu-custom-radio:checked) .base-menu-content .base-menu-content-custom {
-        display: block;
-    }
-
-    .services-big-menu:has(.big-menu-custom-radio:checked) .base-menu-content-item:not(.base-menu-content-custom) {
         display: none;
     }
 
@@ -595,10 +424,6 @@ ul {
         border-radius: 16px;
         cursor: pointer;
         transition: background-color .3s ease;
-    }
-
-    .content-list-item:hover {
-        background: var(--color-background-secondary);
     }
 
     .content-list-link {
@@ -667,30 +492,11 @@ ul {
         transition: transform .15s ease, color .15s ease;
     }
 
-    .accordion-header:has(.checkbox-accordion:checked) .accordion-action {
-        transform: rotate(-180deg);
-        color: red;
-    }
-
-    body:has(.checkbox-accordion:checked) > .app-header {
-        background: #fff;
-    }
-
-    .menu-options:has(.checkbox-accordion:checked) {
-        background: #fff;
-        box-shadow: var(--color-background-secondary-elevated);
-    }
-
     .accordion-link {
         border-bottom: none;
         padding: 0;
         width: auto;
         transition: color .15s ease;
-    }
-
-    .accordion-item:hover,
-    .accordion-link:hover {
-        color: var(--button-primary-bg);
     }
 
     .accordion-content {
