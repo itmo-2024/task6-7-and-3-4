@@ -155,6 +155,26 @@ function isBigScreen() {
     if (screenWidth > 1280) {
         appHeader.style.backgroundColor = '#f2f3f7';
         appHeader.style.boxShadow = 'none';
+
+        accordionHeaders.forEach(header => {
+            const checkbox = header.querySelector('.checkbox-accordion');
+            const isChecked = checkbox.checked;
+
+            if (isChecked) {
+                appHeader.style.backgroundColor = '#fff';
+            }
+        });
+        accordionNames.forEach(name => {
+            const accordion = document.querySelector(`.${name}-accordion`);
+            const bigMenu = document.querySelector(`.${name}-big-menu`);
+
+            if (accordion.checked) {
+                bigMenu.style.transform = 'translateY(128px)';
+                bigMenu.style.boxShadow = '0 0 6px rgba(0,0,0,.08),0 4px 16px rgba(0,0,0,.08)';
+                menuOptions.style.backgroundColor = '#fff';
+                menuOptions.style.boxShadow = '0 0 6px rgba(0,0,0,.08),0 4px 16px rgba(0,0,0,.08)';
+            }
+        });
         
         accordionNames.forEach(name => {
             const accordion = document.querySelector(`.${name}-accordion`);
@@ -168,7 +188,7 @@ function isBigScreen() {
                 checkbox.addEventListener('change', handleCheckboxChange);
                 header.addEventListener('mouseover', handleHeaderMouseOver);
                 header.addEventListener('mouseout', handleHeaderMouseOut);            
-            })
+            });
         });
 
         const accordionLinks = document.querySelectorAll('.accordion-link');
@@ -250,9 +270,13 @@ function isBigScreen() {
                 contentItem.style.backgroundColor = '#fff';
             });
         });
-    } else if (burgerCheckbox.checked) {
-        appHeader.style.backgroundColor = '#fff';
-        appHeader.style.boxShadow = '0 0 6px rgba(0,0,0,.08),0 4px 16px rgba(0,0,0,.08)';
+    } else {
+        if (burgerCheckbox.checked) {
+            appHeader.style.backgroundColor = '#fff';
+            appHeader.style.boxShadow = '0 0 6px rgba(0,0,0,.08),0 4px 16px rgba(0,0,0,.08)';
+        } else {
+            appHeader.style.backgroundColor = '#f2f3f7';
+        }
 
         accordionNames.forEach(name => {
             document.querySelector(`.${name}-accordion`).removeEventListener('change', showBigMenu);
