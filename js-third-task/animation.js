@@ -35,13 +35,15 @@ const tamada = {
         },
         {
           title: "Лекция про раскладки и сетки",
-          subtitle: "Олег был на конференции, но всё равно получилось интересно",
+          subtitle:
+            "Олег был на конференции, но всё равно получилось интересно",
           link: "https://slides-2023-2024.vercel.app/d89fe070-11dc-4ef2-b86d-f42baafb3eac.html",
           icon: "https://ru-msk-2.store.cloud.mts.ru/uploads/backup_icon_b427ce391e.svg",
         },
         {
           title: "Лекция про браузеры",
-          subtitle: "Наконец-то поймёте, что происходит, когда вы набираете https://google.com в поисковой строке",
+          subtitle:
+            "Наконец-то поймёте, что происходит, когда вы набираете https://google.com в поисковой строке",
           link: "https://disk.yandex.com.am/d/fCLX4kF3veBZvQ",
           icon: "https://ru-msk-2.store.cloud.mts.ru/uploads/vdi_icon_73cf48b578.svg",
         },
@@ -77,19 +79,22 @@ const tamada = {
       items: [
         {
           title: "Вопросы после лекции",
-          subtitle: "Для тех, кто получил доп. баллы за посещаемость и не только",
+          subtitle:
+            "Для тех, кто получил доп. баллы за посещаемость и не только",
           link: "https://www.youtube.com/watch?v=ENQfLdrF4rg&ab_channel=%D0%9A%D0%B0%D0%BD%D0%B0%D0%BB%D0%B7%D0%B4%D1%80%D0%B0%D0%B2%D0%BE%D0%B3%D0%BE%D1%81%D0%BC%D1%8B%D1%81%D0%BB%D0%B0%3A%D0%BE%D1%82%D0%B2%D0%BE%D1%80%D1%87%D0%B5%D1%81%D1%82%D0%B2%D0%B5%D0%95.%D0%9F%D0%BE%D0%BD%D0%B0%D1%81%D0%B5%D0%BD%D0%BA%D0%BE%D0%B2%D0%B0/",
           icon: "https://ru-msk-2.store.cloud.mts.ru/uploads/profservices_icon_f596570ac8.svg",
         },
         {
           title: "Проверка на гитхабе",
-          subtitle: "Пачка новых комментов, ждущих правок месяцами (порой нужно почти полностью переделать ДЗ)",
+          subtitle:
+            "Пачка новых комментов, ждущих правок месяцами (порой нужно почти полностью переделать ДЗ)",
           link: "https://github.com/itmo-2024/task2/pull/2#issuecomment-2371677032",
           icon: "https://ru-msk-2.store.cloud.mts.ru/uploads/kedo_icon_28f45b2d7f.svg",
         },
         {
           title: "Обсуждение чего-то, пока Олег выходит из ИТМО",
-          subtitle: "У вас есть как минимум подъём по лестнице, проход через полкорпуса и спуск на 3 этажа",
+          subtitle:
+            "У вас есть как минимум подъём по лестнице, проход через полкорпуса и спуск на 3 этажа",
           link: "https://www.youtube.com/watch?v=jKDqQcHSss4",
           icon: "https://ru-msk-2.store.cloud.mts.ru/uploads/vdi_icon_73cf48b578.svg",
         },
@@ -106,7 +111,7 @@ const tamada = {
       title: "Дополнительно",
       items: [
         {
-          title: "Прикольная футболка с кодуреном",
+          title: "Прикольная футболка с кодеруном",
           subtitle: "Знаю, что это, но пока не решал",
           link: "https://www.youtube.com/watch?v=tlLmpGqYHcs",
           icon: "https://ru-msk-2.store.cloud.mts.ru/uploads/ML_icon_0abd3f5440.svg",
@@ -125,7 +130,8 @@ const tamada = {
         },
         {
           title: "Забота о студентах",
-          subtitle: "Коэффициент на домашки и доп баллы за активности (особенно полезна внимательность)",
+          subtitle:
+            "Коэффициент на домашки и доп баллы за активности (особенно полезна внимательность)",
           link: "https://avatars.dzeninfra.ru/get-zen_doc/1554513/pub_5d8d027c92414d00b04c279c_5d8d02b4fe289100b1194245/scale_1200",
           icon: "https://ru-msk-2.store.cloud.mts.ru/uploads/bi_analytics_icon_d6baac50c7.svg",
         },
@@ -142,8 +148,8 @@ const tamada = {
           icon: "https://ru-msk-2.store.cloud.mts.ru/uploads/MFA_icon_2f1a076a14.svg",
         },
       ],
-      id: 3
-    }
+      id: 3,
+    },
   ],
 };
 
@@ -162,19 +168,22 @@ const contest = {
         },
         {
           title: "Вёрстка газеты",
-          subtitle: "Решаемо за 10 часов (если хотеть приемлемый результат), главное не хардкодить страницу А4...",
+          subtitle:
+            "Решаемо за 10 часов (если хотеть приемлемый результат), главное не хардкодить страницу А4...",
           link: "https://github.com/itmo-2024/task2",
           icon: "https://ru-msk-2.store.cloud.mts.ru/uploads/sec_awareness_icon_8fe011c2f7.svg",
         },
         {
           title: "Pixel Perfect",
-          subtitle: "64 попытки - не предел (может отбить желание продолжать делать домашки)",
+          subtitle:
+            "64 попытки - не предел (может отбить желание продолжать делать домашки)",
           link: "https://github.com/itmo-2024/task3",
           icon: "https://ru-msk-2.store.cloud.mts.ru/uploads/VPN_interconnect_icon_f424d9991c.svg",
         },
         {
           title: "Доступность",
-          subtitle: "Узнайте немного нового о себе после хардкора третьей домашки",
+          subtitle:
+            "Узнайте немного нового о себе после хардкора третьей домашки",
           link: "https://github.com/itmo-2024/task4",
           icon: "https://ru-msk-2.store.cloud.mts.ru/uploads/sd_wan_icon_b1a264d075.svg",
         },
@@ -239,8 +248,8 @@ const contest = {
           icon: "https://ru-msk-2.store.cloud.mts.ru/uploads/cloud_strategy_icon_d6014fd884.svg",
         },
       ],
-      id: 2
-    }
+      id: 2,
+    },
   ],
 };
 
@@ -269,7 +278,7 @@ const support = {
   items: [
     {
       title: "Пишите в чат, вам помогут",
-      subtitle: "Пишите \"спасибо\" в ответ",
+      subtitle: 'Пишите "спасибо" в ответ',
       link: "https://t.me/olegmokhov",
       icon: "https://mws.ru/_ipx/s_40x40/header/news-icon.svg",
     },
@@ -490,3 +499,35 @@ submenus.forEach((submenu) => {
     }
   });
 });
+
+// Close the menu when clicking outside nav
+
+window.addEventListener(
+  "click",
+  function collapseDropdownWhenClickingOutsideNav(e) {
+    const target = e.target;
+
+    if (
+      dropdownMenu.classList.contains("dropdown-menu-hidden") ||
+      mainNav.contains(target) ||
+      menu.contains(target) ||
+      dropdownMenu.contains(target)
+    ) {
+      return;
+    }
+
+    dropdownMenu.style.opacity = 0;
+    setTimeout(() => {
+      dropdownMenu.classList.add("dropdown-menu-hidden");
+    }, 300);
+
+    mainNav.style.backgroundColor = backgroundColorSecondary;
+    menu.style.backgroundColor = backgroundColorSecondary;
+    mainNav.style.boxShadow = "";
+    document.querySelector(".menu-btn-" + lastOpenedSubmenuName).style.color =
+      "";
+    document.querySelector(
+      ".menu-btn-" + lastOpenedSubmenuName + " > .arrow"
+    ).style.transform = "";
+  }
+);
