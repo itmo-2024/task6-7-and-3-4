@@ -531,3 +531,39 @@ window.addEventListener(
     ).style.transform = "";
   }
 );
+
+window.addEventListener("resize", function () {
+  const screenWidth = window.innerWidth;
+  if (screenWidth <= 1280) {
+    mainNav.style.backgroundColor = "";
+    mainNav.style.boxShadow = "";
+    menu.style.backgroundColor = "";
+    if (!dropdownMenu.classList.contains("dropdown-menu-hidden"))
+      dropdownMenu.classList.add("dropdown-menu-hidden");
+    document.querySelector(".menu-btn-" + lastOpenedSubmenuName).style.color =
+      "";
+    document.querySelector(
+      ".menu-btn-" + lastOpenedSubmenuName + " > .arrow"
+    ).style.transform = "";
+  }
+});
+
+// Menu for medium and small screens
+
+const smallMenuButton = document.querySelector(".small-menu-btn");
+const smallMenuItemList = document.querySelector(".menu-item-list");
+const smallMenuItemLinks = document.querySelectorAll(".nested-menu-button");
+
+smallMenuButton.addEventListener("click", function expandItem(e) {
+  smallMenuButton.classList.toggle("active");
+
+  if (smallMenuButton.classList.contains("active")) {
+    smallMenuButton.setAttribute("aria-expanded", "true");
+    smallMenuItemList.setAttribute("aria-hidden", "false");
+    smallMenuItemLinks.forEach((link) => link.setAttribute("tabindex", "0"));
+  } else {
+    smallMenuButton.setAttribute("aria-expanded", "true");
+    smallMenuItemList.setAttribute("aria-hidden", "false");
+    smallMenuItemLinks.forEach((link) => link.setAttribute("tabindex", "-1"));
+  }
+});
