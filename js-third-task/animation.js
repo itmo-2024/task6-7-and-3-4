@@ -550,20 +550,26 @@ window.addEventListener("resize", function () {
 
 // Menu for medium and small screens
 
-const smallMenuButton = document.querySelector(".small-menu-btn");
-const smallMenuItemList = document.querySelector(".menu-item-list");
-const smallMenuItemLinks = document.querySelectorAll(".nested-menu-button");
+const smallMenuButtons = document.querySelectorAll(".small-menu-btn");
 
-smallMenuButton.addEventListener("click", function expandItem(e) {
-  smallMenuButton.classList.toggle("active");
+smallMenuButtons.forEach((smallMenuButton) =>
+  smallMenuButton.addEventListener("click", function expandItem(e) {
+    smallMenuButton.classList.toggle("active");
+    const smallMenuItemList = smallMenuButton.querySelector(
+      ":scope ~ .menu-item-list"
+    );
+    const smallMenuItemLinks = smallMenuItemList.querySelectorAll(
+      ":scope > .small-menu-link"
+    );
 
-  if (smallMenuButton.classList.contains("active")) {
-    smallMenuButton.setAttribute("aria-expanded", "true");
-    smallMenuItemList.setAttribute("aria-hidden", "false");
-    smallMenuItemLinks.forEach((link) => link.setAttribute("tabindex", "0"));
-  } else {
-    smallMenuButton.setAttribute("aria-expanded", "true");
-    smallMenuItemList.setAttribute("aria-hidden", "false");
-    smallMenuItemLinks.forEach((link) => link.setAttribute("tabindex", "-1"));
-  }
-});
+    if (smallMenuButton.classList.contains("active")) {
+      smallMenuButton.setAttribute("aria-expanded", "true");
+      smallMenuItemList.setAttribute("aria-hidden", "false");
+      smallMenuItemLinks.forEach((link) => link.setAttribute("tabindex", "0"));
+    } else {
+      smallMenuButton.setAttribute("aria-expanded", "true");
+      smallMenuItemList.setAttribute("aria-hidden", "false");
+      smallMenuItemLinks.forEach((link) => link.setAttribute("tabindex", "-1"));
+    }
+  })
+);
