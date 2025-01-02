@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Kozlov's menu navigation</title>
+  <link rel="stylesheet" href="styles2p.css"/>
+</head>
+<body>
+<header class="main-header">
+  <p>
+    Здесь какая-то шапка, не важно какая. Шапка нужна, чтобы деть куда-то кнопку в мобильной версии
+  </p>
+  <label class="menu-button">
+    <input type="checkbox" class="menu-nav-btn">
+    <div class="line"></div>
+    <div class="line"></div>
+    <div class="line"></div>
+  </label>
+</header>
+<nav class="desktop-nav">
+  <ul class="desktop-nav-list">
+    <li class="desktop-nav-list-item"><!---->
+      <div class="desktop-nav-menu-button clickable-nav-btn" id="nav-el-1">
+        <label class="nav-el-label">
+          Продукты
+          <span class="icon">
+                        <svg data-v-0477ba8c="" viewBox="0 0 32 32" fill="currentColor"
+                             xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="icon">
+                            <path
+                              d="M6.254 12C5.13904 12 4.58067 13.3483 5.36906 14.1368L9.9588 18.7274C12.8067 21.5758 14.2306 23 16 23C17.7694 23 19.1934 21.5758 22.0412 18.7274L26.6309 14.1368C27.4193 13.3483 26.861 12 25.746 12C25.4141 12 25.0958 12.1319 24.861 12.3666L20.2713 16.9572C18.7974 18.4314 17.8662 19.3553 17.0979 19.9416C16.3874 20.4837 16.1174 20.4965 16 20.4965C15.8826 20.4965 15.6126 20.4837 14.9021 19.9416C14.1338 19.3553 13.2026 18.4314 11.7287 16.9572L7.13894 12.3666C6.90425 12.1319 6.58592 12 6.254 12Z"/>
+                        </svg>
+                    </span>
+        </label>
+      </div>
+    </li>
+    <li class="desktop-nav-list-item"><!---->
+      <div class="desktop-nav-menu-button clickable-nav-btn" id="nav-el-2">
+        <label for="nav-el-2" class="nav-el-label">
+          Профессиональные сервисы
+          <span class="icon">
+                        <svg data-v-0477ba8c="" viewBox="0 0 32 32" fill="currentColor"
+                             xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="icon">
+                            <path
+                              d="M6.254 12C5.13904 12 4.58067 13.3483 5.36906 14.1368L9.9588 18.7274C12.8067 21.5758 14.2306 23 16 23C17.7694 23 19.1934 21.5758 22.0412 18.7274L26.6309 14.1368C27.4193 13.3483 26.861 12 25.746 12C25.4141 12 25.0958 12.1319 24.861 12.3666L20.2713 16.9572C18.7974 18.4314 17.8662 19.3553 17.0979 19.9416C16.3874 20.4837 16.1174 20.4965 16 20.4965C15.8826 20.4965 15.6126 20.4837 14.9021 19.9416C14.1338 19.3553 13.2026 18.4314 11.7287 16.9572L7.13894 12.3666C6.90425 12.1319 6.58592 12 6.254 12Z"/>
+                        </svg>
+                    </span>
+        </label>
+      </div>
+    </li>
+    <li><a class="desktop-nav-menu-button"
+           href="https://mws.ru/partners/partnerskie_resheniya/?utm_source=click_menu">
+      <label class="nav-el-label"> Партнерские сервисы </label>
+    </a>
+    </li>
+    <li>
+      <a class="desktop-nav-menu-button" href="https://mws.ru/partners/">
+        <label class="nav-el-label"> Стать партнером </label>
+      </a>
+    </li>
+    <li>
+      <a class="desktop-nav-menu-button" href="https://mws.ru/promo/">
+        <label class="nav-el-label"> Акции </label>
+      </a>
+    </li>
+    <li class="desktop-nav-list-item"><!---->
+      <div class="desktop-nav-menu-button clickable-nav-btn" id="nav-el-3">
+        <label for="nav-el-3" class="nav-el-label">
+          События
+          <span class="icon">
+                        <svg data-v-0477ba8c="" viewBox="0 0 32 32" fill="currentColor"
+                             xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="icon">
+                            <path
+                              d="M6.254 12C5.13904 12 4.58067 13.3483 5.36906 14.1368L9.9588 18.7274C12.8067 21.5758 14.2306 23 16 23C17.7694 23 19.1934 21.5758 22.0412 18.7274L26.6309 14.1368C27.4193 13.3483 26.861 12 25.746 12C25.4141 12 25.0958 12.1319 24.861 12.3666L20.2713 16.9572C18.7974 18.4314 17.8662 19.3553 17.0979 19.9416C16.3874 20.4837 16.1174 20.4965 16 20.4965C15.8826 20.4965 15.6126 20.4837 14.9021 19.9416C14.1338 19.3553 13.2026 18.4314 11.7287 16.9572L7.13894 12.3666C6.90425 12.1319 6.58592 12 6.254 12Z"/>
+                        </svg>
+                    </span>
+        </label>
+      </div>
+    </li>
+    <li class="desktop-nav-list-item"><!---->
+      <div class="desktop-nav-menu-button clickable-nav-btn" id="nav-el-4">
+        <label for="nav-el-4" class="nav-el-label">
+          Поддержка
+          <span class="icon">
+                        <svg data-v-0477ba8c="" viewBox="0 0 32 32" fill="currentColor"
+                             xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="icon">
+                            <path
+                              d="M6.254 12C5.13904 12 4.58067 13.3483 5.36906 14.1368L9.9588 18.7274C12.8067 21.5758 14.2306 23 16 23C17.7694 23 19.1934 21.5758 22.0412 18.7274L26.6309 14.1368C27.4193 13.3483 26.861 12 25.746 12C25.4141 12 25.0958 12.1319 24.861 12.3666L20.2713 16.9572C18.7974 18.4314 17.8662 19.3553 17.0979 19.9416C16.3874 20.4837 16.1174 20.4965 16 20.4965C15.8826 20.4965 15.6126 20.4837 14.9021 19.9416C14.1338 19.3553 13.2026 18.4314 11.7287 16.9572L7.13894 12.3666C6.90425 12.1319 6.58592 12 6.254 12Z"/>
+                        </svg>
+                    </span>
+        </label>
+      </div>
+    </li>
+    <li>
+      <a class="desktop-nav-menu-button" href="https://mws.ru/vacancies/">
+        <label class="nav-el-label"> Карьера </label>
+      </a>
+    </li>
+  </ul>
+  <div class="desktop-menu">
+    <div class="base-menu-products base-menu">
+      <div class="base-menu-aside">
+        <header class="heading">Продукты</header>
+        <ul class="aside-list">
+          <li class="aside-list-item">
+            <input type="radio" id="prod-aside-1" name="prod-aside"
+                   class="aside-btn-iaas aside-btn" checked/>
+            <label for="prod-aside-1" class="item-label item-label-iaas">Вычисления и хранения (IaaS)</label>
+          </li>
+          <li class="aside-list-item">
+            <input type="radio" id="prod-aside-2" name="prod-aside"
+                   class="aside-btn-saas aside-btn"/>
+            <label for="prod-aside-2" class="item-label item-label-saas">Бизнес-приложения (SaaS)</label>
+          </li>
+        </ul>
+      </div>
+      <div class="base-menu-content">
+        <div class="base-menu-content-iaas">
+          <header class="heading">Вычисления и хранение (IaaS)</header>
+          <ul class="content-list">
+            <li class="content-list-item">
+              <a href="/services/virtual-infrastructure/" class="content-list-link">
+                <img width="40" height="40" srcset="https://ru-msk-2.store.cloud.mts.ru/uploads/VI_icon_5892a15699.svg 1x, https://ru-msk-2.store.cloud.mts.ru/uploads/VI_icon_5892a15699.svg 2x"
+                     src="https://ru-msk-2.store.cloud.mts.ru/uploads/VI_icon_5892a15699.svg">
+                <div class="item">
+                  <div class="item-title">Виртуальная инфраструктура</div>
+                  <div class="item-subtitle">Комплексное решение для&nbsp;развертывания виртуальной
+                    <nobr>ИТ-инфраструктуры</nobr>
+                    для&nbsp;проектов разных масштабов
+                  </div>
+                </div>
+              </a></li>
+            <li class="content-list-item">
+              <a href="https://mws.ru/services/iaas-152-fz/" class="content-list-link">
+                <img width="40" height="40" srcset="https://ru-msk-2.store.cloud.mts.ru/uploads/VI_152_icon_fd8ffd9674.svg 1x,
+                                                      https://ru-msk-2.store.cloud.mts.ru/uploads/VI_152_icon_fd8ffd9674.svg 2x"
+                     src="https://ru-msk-2.store.cloud.mts.ru/uploads/VI_152_icon_fd8ffd9674.svg">
+                <div class="item">
+                  <div class="item-title">Виртуальная инфраструктура. Аттестованный сегмент 152-ФЗ</div>
+                  <div class="item-subtitle">Защищенное облако для ИСПДн</div>
+                </div>
+              </a>
+            </li>
+            <li class="content-list-item">
+              <a href="https://mws.ru/services/virtual-infrastructure-gpu/" class="content-list-link">
+                <img width="40" height="40" srcset="https://ru-msk-2.store.cloud.mts.ru/uploads/VI_GPU_icon_5b5af9161e.svg 1x,
+                                                      https://ru-msk-2.store.cloud.mts.ru/uploads/VI_GPU_icon_5b5af9161e.svg 2x"
+                     src="https://ru-msk-2.store.cloud.mts.ru/uploads/VI_GPU_icon_5b5af9161e.svg">
+                <div class="item">
+                  <div class="item-title">Виртуальная инфраструктура с GPU</div>
+                  <div class="item-subtitle">Графический ускоритель</div>
+                </div>
+              </a>
+            </li>
+            <li class="content-list-item">
+              <a href="https://mws.ru/services/object-storage-s3/" class="content-list-link">
+                <img width="40" height="40" srcset="https://ru-msk-2.store.cloud.mts.ru/uploads/s3_icon_0a3a26b5d4.svg 1x,
+                                                      https://ru-msk-2.store.cloud.mts.ru/uploads/s3_icon_0a3a26b5d4.svg 2x"
+                     src="https://ru-msk-2.store.cloud.mts.ru/uploads/s3_icon_0a3a26b5d4.svg">
+                <div class="item">
+                  <div class="item-title">Объектное хранилище</div>
+                  <div class="item-subtitle">Сервис хранения данных любого объема и формата с доступом к хранимой
+                    информации через интернет из любой точки мира</div>
+                </div>
+              </a>
+            </li>
+            <li class="content-list-item">
+              <a href="https://mws.ru/services/backup/" class="content-list-link">
+                <img width="40" height="40" srcset="https://ru-msk-2.store.cloud.mts.ru/uploads/backup_icon_b427ce391e.svg 1x,
+                                                      https://ru-msk-2.store.cloud.mts.ru/uploads/backup_icon_b427ce391e.svg 2x"
+                     src="https://ru-msk-2.store.cloud.mts.ru/uploads/backup_icon_b427ce391e.svg">
+                <div class="item">
+                  <div class="item-title">Резервное копирование</div>
+                  <div class="item-subtitle">Резервное копирование данных с персональных компьютеров, VDI и любых
+                    устройств с пользовательскими ОC</div>
+                </div>
+              </a>
+            </li>
+            <li class="content-list-item">
+              <a href="https://mws.ru/services/vdi-desktops/" class="content-list-link">
+                <img width="40" height="40" srcset="https://ru-msk-2.store.cloud.mts.ru/uploads/vdi_icon_73cf48b578.svg 1x,
+                                                      https://ru-msk-2.store.cloud.mts.ru/uploads/vdi_icon_73cf48b578.svg 2x"
+                     src="https://ru-msk-2.store.cloud.mts.ru/uploads/vdi_icon_73cf48b578.svg">
+                <div class="item">
+                  <div class="item-title">VDI</div>
+                  <div class="item-subtitle">Виртуальные рабочие места</div>
+                </div>
+              </a>
+            </li>
+            <li class="content-list-item">
+              <a href="https://mws.ru/services/disaster-recovery/" class="content-list-link">
+                <img width="40" height="40" srcset="https://ru-msk-2.store.cloud.mts.ru/uploads/DR_icon_efd7415ba0.svg 1x,
+                                                      https://ru-msk-2.store.cloud.mts.ru/uploads/DR_icon_efd7415ba0.svg 2x"
+                     src="https://ru-msk-2.store.cloud.mts.ru/uploads/DR_icon_efd7415ba0.svg">
+                <div class="item">
+                  <div class="item-title">Катастрофоустойчивая инфраструктура</div>
+                  <div class="item-subtitle">Послеаварийное восстановление</div>
+                </div>
+              </a>
+            </li>
+            <li class="content-list-item">
+              <a href="https://mws.ru/services/managed-kubernetes/" class="content-list-link">
+                <img width="40" height="40" srcset="https://ru-msk-2.store.cloud.mts.ru/uploads/Kuber_icon_39ed7a8fdf.svg 1x,
+                                                      https://ru-msk-2.store.cloud.mts.ru/uploads/Kuber_icon_39ed7a8fdf.svg 2x"
+                     src="https://ru-msk-2.store.cloud.mts.ru/uploads/Kuber_icon_39ed7a8fdf.svg">
+                <div class="item">
+                  <div class="item-title">Managed Kubernetes Service</div>
+                  <div class="item-subtitle">Cервис для быстрого развертывания кластеров Kubernetes</div>
+                </div>
+              </a>
+            </li>
+            <li class="content-list-item">
+              <a href="https://mws.ru/services/state-cloud/" class="content-list-link">
+                <img width="40" height="40"
+                     srcset="https://ru-msk-2.store.cloud.mts.ru/uploads/state_cloud_icon_aa739087b6.svg 1x, https://ru-msk-2.store.cloud.mts.ru/uploads/state_cloud_icon_aa739087b6.svg 2x"
+                     src="https://ru-msk-2.store.cloud.mts.ru/uploads/state_cloud_icon_aa739087b6.svg">
+                <div class="item">
+                  <div class="item-title">Импортозамещённое облако</div>
+                  <div class="item-subtitle">Облако с защитой информации. Бета-тест</div>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="base-menu-content-saas">
+          <header class="heading">Бизнес-приложения (SaaS)</header>
+          <ul class="content-list">
+            <li class="content-list-item">
+              <a href="https://mws.ru/services/business-applications/" class="content-list-link">
+                <img width="40" height="40" srcset="https://ru-msk-2.store.cloud.mts.ru/uploads/business_apps_icon_814e8b14cc.svg 1x, https://ru-msk-2.store.cloud.mts.ru/uploads/business_apps_icon_814e8b14cc.svg 2x"
+                     src="https://ru-msk-2.store.cloud.mts.ru/uploads/business_apps_icon_814e8b14cc.svg">
+                <div class="item">
+                  <div class="item-title">Офисные приложения</div>
+                  <div class="item-subtitle">Сервисы для построения экосистемы цифровых рабочих мест</div>
+                </div>
+              </a>
+            </li>
+            <li class="content-list-item">
+              <a href="https://mws.ru/services/kedo/" class="content-list-link">
+                <img width="40" height="40" srcset="https://ru-msk-2.store.cloud.mts.ru/uploads/kedo_icon_28f45b2d7f.svg 1x, https://ru-msk-2.store.cloud.mts.ru/uploads/kedo_icon_28f45b2d7f.svg 2x"
+                     src="https://ru-msk-2.store.cloud.mts.ru/uploads/kedo_icon_28f45b2d7f.svg">
+                <div class="item">
+                  <div class="item-title">КЭДО</div>
+                  <div class="item-subtitle">Система кадрового электронного документооборота</div>
+                </div>
+              </a>
+            </li>
+            <li class="content-list-item">
+              <a href="https://mws.ru/services/vdi-desktops/" class="content-list-link">
+                <img width="40" height="40" srcset="https://ru-msk-2.store.cloud.mts.ru/uploads/vdi_icon_73cf48b578.svg 1x, https://ru-msk-2.store.cloud.mts.ru/uploads/vdi_icon_73cf48b578.svg 2x"
+                     src="https://ru-msk-2.store.cloud.mts.ru/uploads/vdi_icon_73cf48b578.svg">
+                <div class="item">
+                  <div class="item-title">VDI</div>
+                  <div class="item-subtitle">Виртуальные рабочие места</div>
+                </div>
+              </a>
+            </li>
+            <li class="content-list-item">
+              <a href="https://mws.ru/services/1c-services/" class="content-list-link">
+                <img width="40" height="40" srcset="https://ru-msk-2.store.cloud.mts.ru/uploads/1c_icon_6c9b2d95f0.svg 1x, https://ru-msk-2.store.cloud.mts.ru/uploads/1c_icon_6c9b2d95f0.svg 2x"
+                     src="https://ru-msk-2.store.cloud.mts.ru/uploads/1c_icon_6c9b2d95f0.svg">
+                <div class="item">
+                  <div class="item-title">Комплекс услуг по 1С</div>
+                  <div class="item-subtitle">Хостинг, сопровождение, лицензии</div>
+                </div>
+              </a>
+            </li>
+            <li class="content-list-item">
+              <a href="https://mws.ru/services/rpa/" class="content-list-link">
+                <img width="40" height="40" srcset="https://ru-msk-2.store.cloud.mts.ru/uploads/rpa2_icon_66ee43b781.svg 1x, https://ru-msk-2.store.cloud.mts.ru/uploads/rpa2_icon_66ee43b781.svg 2x"
+                     src="https://ru-msk-2.store.cloud.mts.ru/uploads/rpa2_icon_66ee43b781.svg">
+                <div class="item">
+                  <div class="item-title">RPA MWS</div>
+                  <div class="item-subtitle">Первая российская облачная платформа роботизации на базе Primo RPA</div>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="base-menu-services base-menu">
+      <div class="base-menu-aside">
+        <header class="heading">Профессиональные сервисы</header>
+        <ul class="aside-list">
+          <li class="aside-list-item">
+            <input type="radio" id="serv-aside-1" name="serv-aside"
+                   class="aside-btn-cons aside-btn" checked/>
+            <label for="serv-aside-1" class="item-label item-label-cons">Консалтинг и проектные услуги</label>
+          </li>
+          <li class="aside-list-item">
+            <input type="radio" id="serv-aside-2" name="serv-aside"
+                   class="aside-btn-profserv aside-btn"/>
+            <label for="serv-aside-2" class="item-label item-label-profserv">Профессиональные сервисы и аутсорсинг</label>
+          </li>
+        </ul>
+      </div>
+      <div class="base-menu-content">
+        <div class="base-menu-content-cons">
+          <header class="heading">Консалтинг и проектные услуги</header>
+          <ul class="content-list">
+            <li class="content-list-item">
+              <a href="https://mws.ru/services/it-infrastructure-audit/" class="content-list-link">
+                <img width="40" height="40" srcset="https://ru-msk-2.store.cloud.mts.ru/uploads/IT_audit_icon_fa21a4af45.svg 1x, https://ru-msk-2.store.cloud.mts.ru/uploads/IT_audit_icon_fa21a4af45.svg 2x"
+                     src="https://ru-msk-2.store.cloud.mts.ru/uploads/IT_audit_icon_fa21a4af45.svg">
+                <div class="item">
+                  <div class="item-title">Аудит ИТ-инфраструктуры</div>
+                  <div class="item-subtitle">Анализ текущего состояния ИТ-систем</div>
+                </div>
+              </a>
+            </li>
+            <li class="content-list-item">
+              <a href="https://mws.ru/services/cloud-migration/" class="content-list-link">
+                <img width="40" height="40" srcset="https://ru-msk-2.store.cloud.mts.ru/uploads/migration2cloud_icon_1c5227db02.svg 1x, https://ru-msk-2.store.cloud.mts.ru/uploads/migration2cloud_icon_1c5227db02.svg 2x"
+                     src="https://ru-msk-2.store.cloud.mts.ru/uploads/migration2cloud_icon_1c5227db02.svg">
+                <div class="item">
+                  <div class="item-title">Миграция в облако</div>
+                  <div class="item-subtitle">Перенос инфраструктуры клиента на площадку провайдера</div>
+                </div>
+              </a>
+            </li>
+            <li class="content-list-item">
+              <a href="https://mws.ru/services/cloud-strategy-for-it-infrastructure-development/" class="content-list-link">
+                <img width="40" height="40" srcset="https://ru-msk-2.store.cloud.mts.ru/uploads/cloud_strategy_icon_d6014fd884.svg 1x, https://ru-msk-2.store.cloud.mts.ru/uploads/cloud_strategy_icon_d6014fd884.svg 2x"
+                     src="https://ru-msk-2.store.cloud.mts.ru/uploads/cloud_strategy_icon_d6014fd884.svg">
+                <div class="item">
+                  <div class="item-title">Облачная стратегия развития ИТ-инфраструктуры</div>
+                  <div class="item-subtitle">Разработка оптимальной модели развития в облаке</div>
+                </div>
+              </a>
+            </li>
+            <li class="content-list-item">
+              <a href="https://mws.ru/services/value-engineering/" class="content-list-link">
+                <img width="40" height="40" srcset="https://ru-msk-2.store.cloud.mts.ru/uploads/managed_services_icon_d652711967.svg 1x, https://ru-msk-2.store.cloud.mts.ru/uploads/managed_services_icon_d652711967.svg 2x"
+                     src="https://ru-msk-2.store.cloud.mts.ru/uploads/managed_services_icon_d652711967.svg">
+                <div class="item">
+                  <div class="item-title">Value Engineering</div>
+                  <div class="item-subtitle">Качественная и количественная оценка выгод от внедрения облачных сервисов</div>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="base-menu-content-profserv">
+          <header class="heading">Профессиональные сервисы и аутсорсинг</header>
+          <ul class="content-list">
+            <li class="content-list-item">
+              <a href="https://mws.ru/services/professional-services/" class="content-list-link">
+                <img width="40" height="40" srcset="https://ru-msk-2.store.cloud.mts.ru/uploads/profservices_icon_f596570ac8.svg 1x, https://ru-msk-2.store.cloud.mts.ru/uploads/profservices_icon_f596570ac8.svg 2x"
+                     src="https://ru-msk-2.store.cloud.mts.ru/uploads/profservices_icon_f596570ac8.svg">
+                <div class="item">
+                  <div class="item-title">Профессиональные сервисы</div>
+                  <div class="item-subtitle">Реализация облачных проектов для разных задач</div>
+                </div>
+              </a>
+            </li>
+            <li class="content-list-item">
+              <a href="https://mws.ru/services/managed-services/" class="content-list-link">
+                <img width="40" height="40" srcset="https://ru-msk-2.store.cloud.mts.ru/uploads/managed_services_icon_d652711967.svg 1x, https://ru-msk-2.store.cloud.mts.ru/uploads/managed_services_icon_d652711967.svg 2x"
+                     src="https://ru-msk-2.store.cloud.mts.ru/uploads/managed_services_icon_d652711967.svg">
+                <div class="item">
+                  <div class="item-title">Управление сервисами</div>
+                  <div class="item-subtitle">Экспертиза высокой квалификации без необходимости тратиться на найм собственных сотрудников</div>
+                </div>
+              </a>
+            </li>
+            <li class="content-list-item">
+              <a href="https://mws.ru/services/outsourcing-of-information-security/" class="content-list-link">
+                <img width="40" height="40" srcset="https://ru-msk-2.store.cloud.mts.ru/uploads/Cybersec_outsourcing_icon_1065543b1e.svg 1x, https://ru-msk-2.store.cloud.mts.ru/uploads/Cybersec_outsourcing_icon_1065543b1e.svg 2x"
+                     src="https://ru-msk-2.store.cloud.mts.ru/uploads/Cybersec_outsourcing_icon_1065543b1e.svg">
+                <div class="item">
+                  <div class="item-title">Аутсорсинг ИБ</div>
+                  <div class="item-subtitle">Безопасность как услуга</div>
+                </div>
+              </a>
+            </li>
+            <li class="content-list-item">
+              <a href="https://mws.ru/services/1c-services/" class="content-list-link">
+                <img width="40" height="40" srcset="https://ru-msk-2.store.cloud.mts.ru/uploads/1c_icon_6c9b2d95f0.svg 1x, https://ru-msk-2.store.cloud.mts.ru/uploads/1c_icon_6c9b2d95f0.svg 2x"
+                     src="https://ru-msk-2.store.cloud.mts.ru/uploads/Cybersec_outsourcing_icon_1065543b1e.svg">
+                <div class="item">
+                  <div class="item-title">Сопровождение 1С</div>
+                  <div class="item-subtitle">Поддержка пользователей и приложений 1С</div>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="base-menu-events base-menu">
+      <div class="base-menu-aside">
+        <header class="heading">События</header>
+        <p class="subtitle"> Рассказываем о наших мероприятиях, делимся новостями, обучаем </p>
+      </div>
+      <div class="base-menu-content">
+        <div class="base-menu-content-events">
+          <header class="heading">Консалтинг и проектные услуги</header>
+          <ul class="content-list">
+            <li class="content-list-item">
+              <a href="https://mws.ru/news/" class="content-list-link">
+                <img width="40" height="40" srcset="https://mws.ru/_ipx/s_40x40/header/news-icon.svg 1x, https://mws.ru/_ipx/s_80x80/header/news-icon.svg 2x"
+                     src="https://mws.ru/_ipx/s_40x40/header/news-icon.svg">
+                <div class="item">
+                  <div class="item-title">Новости</div>
+                  <div class="item-subtitle">Статьи об услугах, кейсы, дайджесты</div>
+                </div>
+              </a>
+            </li>
+            <li class="content-list-item">
+              <a href="https://mws.ru/events/" class="content-list-link">
+                <img width="40" height="40" srcset="https://mws.ru/_ipx/s_40x40/header/events-icon.svg 1x, https://mws.ru/_ipx/s_80x80/header/events-icon.svg 2x"
+                     src="https://mws.ru/_ipx/s_40x40/header/events-icon.svg">
+                <div class="item">
+                  <div class="item-title">Мероприятия</div>
+                  <div class="item-subtitle">Вебинары, конференции, митапы</div>
+                </div>
+              </a>
+            </li>
+            <li class="content-list-item">
+              <a href="https://mws.ru/blog/" class="content-list-link">
+                <img width="40" height="40" srcset="https://mws.ru/_ipx/s_40x40/header/article-icon.svg 1x, https://mws.ru/_ipx/s_80x80/header/article-icon.svg 2x"
+                     src="https://mws.ru/_ipx/s_40x40/header/article-icon.svg">
+                <div class="item">
+                  <div class="item-title">Статьи</div>
+                  <div class="item-subtitle">Новости сервисов, платформы</div>
+                </div>
+              </a>
+            </li>
+            <li class="content-list-item">
+              <a href="https://mws.ru/devops/" class="content-list-link">
+                <img width="40" height="40" srcset="https://mws.ru/_ipx/s_40x40/header/devops-course-icon.svg 1x, https://mws.ru/_ipx/s_80x80/header/devops-course-icon.svg 2x"
+                     src="https://mws.ru/_ipx/s_40x40/header/devops-course-icon.svg">
+                <div class="item">
+                  <div class="item-title">Cloud DevOps</div>
+                  <div class="item-subtitle">Бесплатный курс по DevOps и Kubernetes</div>
+                </div>
+              </a>
+            </li>
+            <li class="content-list-item">
+              <a href="https://mws.ru/courses/network-technologies" class="content-list-link">
+                <img width="40" height="40" srcset="https://mws.ru/_ipx/s_40x40/header/network-course-icon.svg 1x, https://mws.ru/_ipx/s_80x80/header/network-course-icon.svg 2x"
+                     src="https://mws.ru/_ipx/s_40x40/header/network-course-icon.svg">
+                <div class="item">
+                  <div class="item-title">Основы сетевых технологий</div>
+                  <div class="item-subtitle">Бесплатный курс об устройстве сетей</div>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="base-menu-support base-menu">
+      <div class="base-menu-aside">
+        <header class="heading">Поддержка</header>
+        <p class="subtitle">Техническая поддержка 24/7</p>
+      </div>
+      <div class="base-menu-content">
+        <div class="base-menu-content-support">
+          <ul class="content-list">
+            <li class="content-list-item">
+              <a href="https://mws.ru/courses/contacts" class="content-list-link">
+                <img width="40" height="40" srcset="https://mws.ru/_ipx/s_40x40/header/news-icon.svg 1x, https://mws.ru/_ipx/s_80x80/header/news-icon.svg 2x"
+                     src="https://mws.ru/_ipx/s_40x40/header/news-icon.svg">
+                <div class="item">
+                  <div class="item-title">Основы сетевых технологий</div>
+                </div>
+              </a>
+            </li>
+            <li class="content-list-item">
+              <a href="https://docs.cloud.mts.ru/" class="content-list-link">
+                <img width="40" height="40" srcset="https://mws.ru/_ipx/s_40x40/header/article-icon.svg 1x, https://mws.ru/_ipx/s_80x80/header/article-icon.svg 2x"
+                     src="https://mws.ru/_ipx/s_40x40/header/article-icon.svg">
+                <div class="item">
+                  <div class="item-title">Документация</div>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
+<nav class="mobile-nav">
+  <div class="accordion-base products">
+    <div class="accordion-header">
+      <input type="checkbox" class="accordion-products" id="accordion-products">
+      <label for="accordion-products" class="accordion-label">
+        <span class="accordion-title">Продукты</span>
+        <div class="accordion-action">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24" class="mws-accordion__chevron"><path d="M4.69 9c-.836 0-1.255 1.011-.663 1.603l3.442 3.443C9.605 16.181 10.673 17.25 12 17.25s2.395-1.068 4.53-3.204l3.443-3.443a.94.94 0 1 0-1.327-1.328l-3.442 3.443c-1.106 1.105-1.804 1.799-2.38 2.238-.534.407-.736.416-.824.416s-.29-.01-.823-.416c-.577-.44-1.275-1.133-2.38-2.238L5.354 9.275A.94.94 0 0 0 4.691 9Z"></path></svg>
+        </div>
+      </label>
+    </div>
+    <div class="accordion-content">
+      <div class="wrap">
+        <div class="accordion-inner">
+          <header class="accordion-inner-head">
+            <input type="checkbox" class="accordion-inner-btn" id="accordion-iaas">
+            <label class="accordion-inner-title" for="accordion-iaas">
+              <button class="accordion-inner-plus">
+                <span class="vert"></span>
+                <span class="hor"></span>
+              </button>
+              <span>Вычисления и хранение (IaaS)</span>
+            </label>
+          </header>
+          <ul class="accordion-inner-list">
+            <div class="wrap">
+              <li class="accordion-inner-list-item">
+                <a href="https://mws.ru/services/virtual-infrastructure/">Виртуальная инфраструктура</a>
+                <p class="inner-item-description">Комплексное решение для развертывания виртуальной ИТ-инфраструктуры для проектов разных масштабов</p>
+              </li>
+              <li class="accordion-inner-list-item">
+                <a href="https://mws.ru/services/iaas-152-fz/">Виртуальная инфраструктура. Аттестованный сегмент 152-ФЗ</a>
+                <p class="inner-item-description">Защищенное облако для ИСПДн</p>
+              </li>
+              <li class="accordion-inner-list-item">
+                <a href="https://mws.ru/services/virtual-infrastructure-gpu/">Виртуальная инфраструктура с GPU</a>
+                <p class="inner-item-description">Графический ускоритель</p>
+              </li>
+              <li class="accordion-inner-list-item">
+                <a href="https://mws.ru/services/object-storage-s3/">Объектное хранилище</a>
+                <p class="inner-item-description">Сервис хранения данных любого объема и формата с доступом к хранимой информации через интернет из любой точки мира</p>
+              </li>
+              <li class="accordion-inner-list-item">
+                <a href="https://mws.ru/services/backup/">Резервное копирование</a>
+                <p class="inner-item-description">Резервное копирование данных с персональных компьютеров, VDI и любых устройств с пользовательскими ОC</p>
+              </li>
+              <li class="accordion-inner-list-item">
+                <a href="https://mws.ru/services/vdi-desktops/">VDI</a>
+                <p class="inner-item-description">Виртуальные рабочие места</p>
+              </li>
+              <li class="accordion-inner-list-item">
+                <a href="https://mws.ru/services/disaster-recovery/">Катастрофоустойчивая инфраструктура</a>
+                <p class="inner-item-description">Послеаварийное восстановление</p>
+              </li>
+              <li class="accordion-inner-list-item">
+                <a href="https://mws.ru/services/managed-kubernetes/">Managed Kubernetes Service</a>
+                <p class="inner-item-description">Cервис для быстрого развертывания кластеров Kubernetes</p>
+              </li>
+              <li class="accordion-inner-list-item">
+                <a href="https://mws.ru/state-cloud/">Импортозамещённое облако</a>
+                <p class="inner-item-description">Облако с защитой информации. Бета-тест</p>
+              </li>
+            </div>
+          </ul>
+        </div>
+        <div class="accordion-inner">
+          <header class="accordion-inner-head">
+            <input type="checkbox" class="accordion-inner-btn" id="accordion-saas">
+            <label class="accordion-inner-title" for="accordion-saas">
+              <button class="accordion-inner-plus">
+                <span class="vert"></span>
+                <span class="hor"></span>
+              </button>
+              <span>Бизнес-приложения (SaaS)</span>
+            </label>
+          </header>
+          <ul class="accordion-inner-list">
+            <div class="wrap">
+              <li class="accordion-inner-list-item">
+                <a href="https://mws.ru/services/business-applications/">Офисные приложения</a>
+                <p class="inner-item-description">Сервисы для построения экосистемы цифровых рабочих мест</p>
+              </li>
+              <li class="accordion-inner-list-item">
+                <a href="https://mws.ru/services/kedo/">КЭДО</a>
+                <p class="inner-item-description">Система кадрового электронного документооборота</p>
+              </li>
+              <li class="accordion-inner-list-item">
+                <a href="https://mws.ru/services/vdi-desktops/">VDI</a>
+                <p class="inner-item-description">Виртуальные рабочие места</p>
+              </li>
+              <li class="accordion-inner-list-item">
+                <a href="https://mws.ru/services/1c-services/">Комлекс услуг по 1C</a>
+                <p class="inner-item-description">Хостинг, сопровождение, лицензии</p>
+              </li>
+              <li class="accordion-inner-list-item">
+                <a href="https://mws.ru/services/1c-services/">RPA MWS</a>
+                <p class="inner-item-description">Первая российская облачная платформа роботизации на базе Primo RPA</p>
+              </li>
+            </div>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="accordion-base services">
+    <div class="accordion-header">
+      <input type="checkbox" class="accordion-services" id="accordion-services">
+      <label for="accordion-services" class="accordion-label">
+        <span class="accordion-title">Профессиональные сервисы</span>
+        <div class="accordion-action">
+          <svg data-v-f57ab823="" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24" class="mws-accordion__chevron"><path d="M4.69 9c-.836 0-1.255 1.011-.663 1.603l3.442 3.443C9.605 16.181 10.673 17.25 12 17.25s2.395-1.068 4.53-3.204l3.443-3.443a.94.94 0 1 0-1.327-1.328l-3.442 3.443c-1.106 1.105-1.804 1.799-2.38 2.238-.534.407-.736.416-.824.416s-.29-.01-.823-.416c-.577-.44-1.275-1.133-2.38-2.238L5.354 9.275A.94.94 0 0 0 4.691 9Z"></path></svg>
+        </div>
+      </label>
+    </div>
+    <div class="accordion-content">
+      <div class="wrap">
+        <div class="accordion-inner">
+          <header class="accordion-inner-head">
+            <input type="checkbox" class="accordion-inner-btn" id="accordion-cons">
+            <label class="accordion-inner-title" for="accordion-cons">
+              <button class="accordion-inner-plus">
+                <span class="vert"></span>
+                <span class="hor"></span>
+              </button>
+              <span>Консалтинг и проектные услуги</span>
+            </label>
+          </header>
+          <ul class="accordion-inner-list">
+            <div class="wrap">
+              <li class="accordion-inner-list-item">
+                <a href="https://mws.ru/services/it-infrastructure-audit/">Аудит ИТ-инфраструктуры</a>
+                <p class="inner-item-description">Анализ текущего состояния ИТ-систем</p>
+              </li>
+              <li class="accordion-inner-list-item">
+                <a href="https://mws.ru/services/cloud-migration/">Миграция в облако</a>
+                <p class="inner-item-description">Перенос инфраструктуры клиента на площадку провайдера</p>
+              </li>
+              <li class="accordion-inner-list-item">
+                <a href="https://mws.ru/services/cloud-strategy-for-it-infrastructure-development/">Облачная стратегия развития ИТ-инфраструктуры</a>
+                <p class="inner-item-description">Разработка оптимальной модели развития в облаке</p>
+              </li>
+              <li class="accordion-inner-list-item">
+                <a href="https://mws.ru/services/value-engineering/">Value Engineering</a>
+                <p class="inner-item-description">Качественная и количественная оценка выгод от внедрения облачных сервисов</p>
+              </li>
+            </div>
+          </ul>
+        </div>
+        <div class="accordion-inner">
+          <header class="accordion-inner-head">
+            <input type="checkbox" class="accordion-inner-btn" id="accordion-profserv">
+            <label class="accordion-inner-title" for="accordion-profserv">
+              <button class="accordion-inner-plus">
+                <span class="vert"></span>
+                <span class="hor"></span>
+              </button>
+              <span>Профессиональные сервисы и аутсорсинг</span>
+            </label>
+          </header>
+          <ul class="accordion-inner-list">
+            <div class="wrap">
+              <li class="accordion-inner-list-item">
+                <a href="https://mws.ru/services/professional-services/">Профессиональные сервисы</a>
+                <p class="inner-item-description">Реализация облачных проектов для разных задач</p>
+              </li>
+              <li class="accordion-inner-list-item">
+                <a href="https://mws.ru/services/managed-services/">Управление сервисами</a>
+                <p class="inner-item-description">Экспертиза высокой квалификации без необходимости тратиться на найм собственных сотрудников</p>
+              </li>
+              <li class="accordion-inner-list-item">
+                <a href="https://mws.ru/services/outsourcing-of-information-security/">Аутсорсинг ИБ</a>
+                <p class="inner-item-description">Безопасность как услуга</p>
+              </li>
+              <li class="accordion-inner-list-item">
+                <a href="https://mws.ru/services/1c-services/">Сопровождение 1С</a>
+                <p class="inner-item-description">Поддержка пользователей и приложений 1С</p>
+              </li>
+            </div>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <a class="accordion-link" href="https://mws.ru/partners/partnerskie_resheniya/?utm_source=click_menu">
+    Партнерские сервисы
+  </a>
+  <a class="accordion-link" href="https://mws.ru/partners/">
+    Стать партнером
+  </a>
+  <a class="accordion-link" href="https://mws.ru/promo/">
+    Акции
+  </a>
+  <div class="accordion-base events">
+    <div class="accordion-header">
+      <input type="checkbox" class="accordion-events" id="accordion-events">
+      <label for="accordion-events" class="accordion-label">
+        <span class="accordion-title">События</span>
+        <div class="accordion-action">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24" class="mws-accordion__chevron"><path d="M4.69 9c-.836 0-1.255 1.011-.663 1.603l3.442 3.443C9.605 16.181 10.673 17.25 12 17.25s2.395-1.068 4.53-3.204l3.443-3.443a.94.94 0 1 0-1.327-1.328l-3.442 3.443c-1.106 1.105-1.804 1.799-2.38 2.238-.534.407-.736.416-.824.416s-.29-.01-.823-.416c-.577-.44-1.275-1.133-2.38-2.238L5.354 9.275A.94.94 0 0 0 4.691 9Z"></path></svg>
+        </div>
+      </label>
+    </div>
+    <ul class="common-menu-list">
+      <div class="wrap">
+        <li class="common-menu-list-item">
+          <a href="https://mws.ru/news/">Новости</a>
+          <p class="common-menu-list-item-description">Статьи об услугах, кейсы, дайджесты</p>
+        </li>
+        <li class="common-menu-list-item">
+          <a href="https://mws.ru/events/">Мероприятия</a>
+          <p class="common-menu-list-item-description">Вебинары, конференции, митапы</p>
+        </li>
+        <li class="common-menu-list-item">
+          <a href="https://mws.ru/blog/">Статьи</a>
+          <p class="common-menu-list-item-description">Новости сервисов, платформы</p>
+        </li>
+        <li class="common-menu-list-item">
+          <a href="https://mws.ru/courses/devops/">Cloud DevOps</a>
+          <p class="common-menu-list-item-description">Бесплатный курс по DevOps и Kubernetes</p>
+        </li>
+        <li class="common-menu-list-item">
+          <a href="https://mws.ru/courses/network-technologies/">Основы сетевых технологий</a>
+          <p class="common-menu-list-item-description">Бесплатный курс об устройстве сетей</p>
+        </li>
+      </div>
+    </ul>
+  </div>
+  <div class="accordion-base support">
+    <div class="accordion-header">
+      <input type="checkbox" class="accordion-support" id="accordion-support">
+      <label for="accordion-support" class="accordion-label">
+        <span class="accordion-title">Поддержка</span>
+        <div class="accordion-action">
+          <svg data-v-f57ab823="" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24" class="mws-accordion__chevron"><path d="M4.69 9c-.836 0-1.255 1.011-.663 1.603l3.442 3.443C9.605 16.181 10.673 17.25 12 17.25s2.395-1.068 4.53-3.204l3.443-3.443a.94.94 0 1 0-1.327-1.328l-3.442 3.443c-1.106 1.105-1.804 1.799-2.38 2.238-.534.407-.736.416-.824.416s-.29-.01-.823-.416c-.577-.44-1.275-1.133-2.38-2.238L5.354 9.275A.94.94 0 0 0 4.691 9Z"></path></svg>
+        </div>
+      </label>
+    </div>
+    <ul class="common-menu-list">
+      <div class="wrap">
+        <li class="common-menu-list-item">
+          <a href="https://mws.ru/contacts/">Контакты</a>
+        </li>
+        <li class="common-menu-list-item">
+          <a href="https://docs.cloud.mts.ru/?_ma=4766552481732350328.1732363290955">
+            Документация
+          </a>
+        </li>
+      </div>
+    </ul>
+  </div>
+  <a href="https://mws.ru/vacancies/" class="accordion-link">Карьера</a>
+</nav>
+<div class="down-text">
+  <p>Этот текст, чтобы показать, что ниже ничего не съезжает на фоне</p>
+</div>
+</body>
+<script src="menu.js"></script>
+</html>
