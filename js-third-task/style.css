@@ -382,7 +382,7 @@ ul {
     }
 
     .small-menu-btn {
-        padding: 10px 0;
+        padding: 10px 0 6px 0;
         background-color: #fff;
         border: none;
         display: flex;
@@ -396,9 +396,11 @@ ul {
         position: relative;
         display: grid;
         overflow: hidden;
-        line-height: 0;
+        font: 400 1rem / 1.25rem MTSCompactMedium, MTS Sans;
+        grid-template-rows: 0fr;
         color: transparent;
-        transition: line-height .5s;
+        transition: grid-template-rows .5s ease;
+        margin-bottom: 4px;
     }
 
     .small-menu-item {
@@ -406,11 +408,18 @@ ul {
     }
 
     .small-menu-link {
+        margin-left: 24px;
         display: block;
     }
 
+    .big-menu-link {
+        display: block;
+        width: 100%;
+        padding: 10px 0;
+    }
+
     .small-menu-btn.active ~ .menu-item-list {
-        line-height: 1.2;
+        grid-template-rows: 1fr;
     }
 }
 
